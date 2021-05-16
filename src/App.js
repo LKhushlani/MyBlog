@@ -1,14 +1,15 @@
-// import logo from './logo.svg';
 import './App.css';
-
+import NavBar from './NavBar'
+import Home from './Home' 
 function App() {
   return (
-    <div className="App">  
+    <div className="App">
       {/* div injected in html file  */}
 
-<div className="content">
-  <h1> App component</h1>
-  </div>
+      <NavBar />
+      <div className="content">
+        <Home />
+      </div>
     </div>
   );
 }
