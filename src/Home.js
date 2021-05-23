@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import BlogList from './BlogList';
 
 const Home = () => {
     
@@ -10,15 +11,8 @@ const Home = () => {
     return (  
         <div className="home">
 {/* loop through the array and generates a template  using JS using map method*/}
-            {blogs.map((blog) => (
-                <div className="blog-preview" key={blog.idx}>
-                    <h2> { blog.title }</h2>
-                    <p>Written by { blog.author } </p>
-
-                </div>
-      
-            ))}
-         
+            <BlogList blogs={blogs}/> 
+         {/* props used here props passed here from parent to child component */}
         </div>
 
     );
